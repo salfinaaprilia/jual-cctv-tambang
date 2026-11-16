@@ -232,7 +232,7 @@ const cctvProducts = [
       'Smart IR Night Vision Jarak Jauh hingga 150 Meter dengan Penyesuaian Sudut Sorot Otomatis',
       'Mekanisme Pan 360° Endless & Tilt -15° s/d 90°, Sertifikasi Cuaca IP66, IK10, serta TVS 6000V Lightning'
     ],
-    desc: 'Kamera PTZ Speed Dome 4 MP berkinerja tinggi yang dilengkapi modem 4G LTE mandiri terintegrasi. Dirancang untuk pengawasan area penambangan terbuka (open-pit), disposal overburden, dan persimpangan jalur angkut batubara (hauling road) yang berpindah-pindah tanpa ketergantungan pada jaringan kabel fiber optik atau LAN tetap. Menggabungkan 25× optical zoom bertenaga DarkFighter dan Smart IR 150 meter untuk memantau aktivitas operasional alat berat hingga pergerakan dinding lereng tambang secara fleksibel.',
+    desc: 'Kamera PTZ Speed Dome 4 MP berkinerja tinggi yang dilengkapi modem 4G LTE mandiri terintegrasi. Dirancang untuk pengawasan area penambangan terbuka (open-pit), disposal overburden, dan persimpangan jalur angkut batubara (hauling road) yang berpindah-pindah tanpa ketergantungan pada jaringan kabel fiber optik atau LAN tetap. Menggabungkan 25× optical zoom bertenaga DarkFighter dan Smart IR 150 meter untuk memantau aktivitas operasional alat berat hingga pergerakan dinding lereng tambang secara fleksibel. Tersedia juga sebagai paket sistem tenaga surya (solar mobile mast / trailer) dengan profil konsumsi daya rendah untuk titik pantau tanpa listrik PLN.',
     detailedSpecs: {
       'Sensor & Kamera': {
         'Sensor Gambar': '1/2.8″ Progressive Scan CMOS DarkFighter',
@@ -265,6 +265,10 @@ const cctvProducts = [
       },
       'Fitur AI Cerdas': {
         'Perlindungan Perimeter': 'AcuSense AI klasifikasi manusia dan kendaraan, deteksi perlintasan batas pit, intrusi, masuk/keluar area aman'
+      },
+      'Opsi Sistem Tenaga Surya': {
+        'Paket Solar': 'Dapat dipasang pada Solar Mobile Mast / Trailer CCTV Tambang',
+        'Optimalisasi Daya': 'Mendukung profil konsumsi daya rendah (Low Power Standby) untuk menjaga baterai'
       },
       'Fisik & Lingkungan': {
         'Rating Ketahanan': 'IP66 Weatherproof, IK10 Vandal-Resistant',
@@ -399,7 +403,7 @@ const cctvProducts = [
   },
 
   // ==========================================
-  // 3. CCTV Thermal (3 Model)
+  // 3. CCTV Thermal (2 Model)
   // ==========================================
   {
     id: 'ds-2td2138-7-qy',
@@ -458,72 +462,6 @@ const cctvProducts = [
     }
   },
   {
-    id: 'ds-2td2466t-25x',
-    model: 'DS-2TD2466T-25X',
-    productName: 'Explosion-Proof Thermographic Network Bullet Camera',
-    name: 'Hikvision DS-2TD2466T-25X Explosion-Proof Thermographic Bullet Camera',
-    category: 'thermal',
-    categoryName: 'CCTV Thermal',
-    brand: 'hikvision',
-    brandName: 'Hikvision Industrial',
-    res: 'Thermal 640 × 512, Lensa 25 mm',
-    price: 'Hubungi Penawaran',
-    image: 'assets/produk/DS-2TD2466T-25X/gambar1.webp',
-    images: [
-      'assets/produk/DS-2TD2466T-25X/gambar1.webp'
-    ],
-    specs: [
-      'Housing Anti-Ledakan Stainless Steel 316L: Tahan Korosi untuk Area Berbahaya dan Lingkungan Kimia',
-      'Sensor Termal Sensitivitas Tinggi 640 × 512 (VOx) dengan NETD < 40 mK dan Lensa 25 mm',
-      'Pengukuran Suhu -20 °C hingga 550 °C (Akurasi ±2 °C / ±2%) dengan 21 Aturan Pengukuran',
-      'Deteksi Titik Api Dinamis hingga 10 Titik Api dan Alarm Anomali Suhu yang Andal',
-      'Perlindungan Perimeter Cerdas: Line Crossing, Intrusi, serta Masuk dan Keluar Area'
-    ],
-    desc: 'Kamera termografi bullet anti-ledakan (explosion-proof) Hikvision dengan housing stainless steel 316L yang melindungi kamera di lingkungan korosif dan memperpanjang usia pakai jauh di atas kamera standar. Dilengkapi sensor termal Vanadium Oxide beresolusi 640 × 512 dengan sensitivitas NETD kurang dari 40 mK dan lensa 25 mm, kamera ini mampu mengukur suhu dari -20 °C hingga 550 °C dengan akurasi ±2 °C serta mendeteksi hingga 10 titik api secara dinamis. Cocok untuk area berisiko tinggi di pertambangan seperti fuel station, gudang bahan peledak, stockpile batubara, conveyor, dan fasilitas pengolahan yang membutuhkan peringatan dini kebakaran.',
-    detailedSpecs: {
-      'Modul Termal': {
-        'Sensor Gambar': 'Vanadium Oxide (VOx) Uncooled Focal Plane Arrays',
-        'Resolusi Maksimal': '640 × 512',
-        'Pixel Interval': '17 μm',
-        'Sensitivitas (NETD)': 'Kurang dari 40 mK (0,04 °C), F# = 1.0',
-        'Lensa (Focal Length)': '25 mm, aperture F1.0',
-        'Sudut Pandang (FOV)': '24,55° × 19,75° (H × V)',
-        'Jarak Fokus Minimum': '2 m',
-        'Response Waveband': '8 μm hingga 14 μm'
-      },
-      'Pengukuran Suhu & Deteksi Api': {
-        'Rentang Suhu': '-20 °C hingga 550 °C (-4 °F hingga 1.022 °F)',
-        'Akurasi Suhu': 'Maks. (±2 °C, ±2%)',
-        'Aturan Pengukuran': '3 tipe aturan, 21 aturan (10 titik, 10 area, 1 garis)',
-        'Deteksi Kebakaran': 'Deteksi titik api dinamis, hingga 10 titik api'
-      },
-      'Fitur Cerdas (VCA)': {
-        'Analitik Video': '4 tipe aturan VCA (Line Crossing, Intrusion, Region Entrance, Region Exiting), hingga 8 aturan',
-        'Pemrosesan Citra': 'Adaptive AGC, DDE, 3D DNR, hingga 15 palet warna'
-      },
-      'Video & Jaringan': {
-        'Main Stream': '50 fps (640 × 512, 384 × 288, 352 × 288)',
-        'Kompresi Video': 'H.265 / H.264 / MJPEG, H.265+ / H.264+',
-        'Live View Bersamaan': 'Hingga 20 kanal',
-        'Port Jaringan': '1 RJ45 10M/100M self-adaptive Ethernet',
-        'Integrasi': 'ISAPI, Hikvision SDK, platform pihak ketiga, iVMS-4200'
-      },
-      'Antarmuka': {
-        'Alarm Input / Output': '2 input (0-5 V DC) / 2 output relay',
-        'Audio': '1 input (3,5 mm Mic/Line in), 1 output linear',
-        'Penyimpanan Lokal': 'Slot Micro SD/SDHC/SDXC hingga 128 GB',
-        'Output Video Analog': '1.0 V [p-p] / 75 Ω, PAL/NTSC, BNC'
-      },
-      'Fisik & Lingkungan': {
-        'Material Housing': 'Stainless steel 316L anti-ledakan (explosion-proof)',
-        'Standar Perlindungan': 'IP66, proteksi petir TVS 6000 V, proteksi surge dan tegangan transien',
-        'Suhu Operasional': '-40 °C hingga 60 °C, kelembapan 90% atau kurang',
-        'Suplai Daya': '100-240 VAC, PoE (802.3at), konsumsi maks. 15 W',
-        'Dimensi & Berat': '409,6 × 179,2 × 183,3 mm, sekitar 19,11 kg'
-      }
-    }
-  },
-  {
     id: 'ds-2td4167t-25-w',
     model: 'DS-2TD4167T-25/W',
     productName: 'Thermographic Thermal & Optical Bi-Spectrum Network Speed Dome',
@@ -576,7 +514,7 @@ const cctvProducts = [
   },
 
   // ==========================================
-  // 4. CCTV Solar Powered (3 Model)
+  // 4. CCTV Solar Powered (2 Model)
   // ==========================================
   {
     id: 'ds-2xs6a47g1-ls-c36s80',
@@ -688,109 +626,10 @@ const cctvProducts = [
       }
     }
   },
-  {
-    id: 'ds-2de5425iwg-k-4g-solar',
-    model: 'DS-2DE5425IWG-K/4G + Solar System',
-    productName: '4 MP 25× 4G Solar-Ready Outdoor Speed Dome System',
-    name: 'Hikvision DS-2DE5425IWG-K/4G Solar-Ready 4 MP 25× Speed Dome',
-    category: 'solar-powered',
-    categoryName: 'CCTV Solar Powered',
-    brand: 'hikvision',
-    brandName: 'Hikvision Industrial',
-    res: '4 MP (2560 × 1440) Solar PTZ 25×',
-    price: 'Hubungi Penawaran',
-    image: 'assets/produk/DS-2DE5425IWG-K4G/gambar1.webp',
-    images: [
-      'assets/produk/DS-2DE5425IWG-K4G/gambar1.webp'
-    ],
-    specs: [
-      'Kombinasi Kamera PTZ Speed Dome 25× Optical Zoom (4.8 - 120 mm) dengan Konfigurasi Sistem Tenaga Surya',
-      'Modem Seluler 4G LTE Terintegrasi: Kontrol PTZ 360 Derajat & Live View Full HD Tanpa Infrastruktur Kabel',
-      'Smart IR Night Vision Jarak Jauh hingga 150 Meter dengan Penyesuaian Sudut Sorot Otomatis',
-      'Profil Konsumsi Daya Efisien (Low-Power Standby & Wake-Up Mode) Menjaga Ketahanan Baterai Solar Trailer',
-      'AcuSense AI Klasifikasi Manusia/Kendaraan, Proteksi Standar IP66, IK10 Vandal-Proof, dan TVS 6000V Surge'
-    ],
-    desc: 'Solusi kamera PTZ Speed Dome berkinerja tinggi yang dioptimalkan untuk integrasi pada Mobile CCTV Solar Trailer dan Menara Pantau Bertenaga Surya di site tambang. Menghadirkan kemampuan rotasi pan 360 derajat tanpa batas dan pembesaran optik 25× dengan transmisi data nirkabel 4G LTE mandiri. Dilengkapi manajemen daya pintar untuk memperpanjang daya tahan baterai trailer pada malam hari atau saat cuaca mendung berkepanjangan.',
-    detailedSpecs: {
-      'Sensor & Perbesaran': {
-        'Sensor Gambar': '1/2.8″ Progressive Scan CMOS DarkFighter 4 MP (2560 × 1440 @ 30 fps)',
-        'Zoom Optik': '25× Optical Zoom (4.8 mm - 120 mm), 16× Digital Zoom',
-        'Sensitivitas': 'Color: 0.005 Lux @ (F1.6, AGC ON), B/W: 0.001 Lux @ (F1.6, AGC ON)'
-      },
-      'Mekanisme PTZ': {
-        'Rotasi': 'Pan 360° endless, Tilt -15° s/d 90° (auto flip)',
-        'Penerangan IR': 'Smart IR hingga 150 meter'
-      },
-      'Integrasi Tenaga Surya': {
-        'Optimalisasi Daya': 'Mendukung profil konsumsi daya rendah (Low Power Standby)',
-        'Kompatibilitas': 'Dirancang untuk paket Solar Mobile Mast / Trailer CCTV Tambang'
-      },
-      'Transmisi Nirkabel': {
-        'Jaringan': '4G LTE FDD/TDD Dual SIM failover, 1 RJ45 Ethernet'
-      },
-      'Proteksi & Fisik': {
-        'Rating': 'IP66 Weatherproof, IK10 Vandal Resistance',
-        'Suhu Kerja': '-30 °C s/d 65 °C, suplai daya 12 VDC'
-      }
-    }
-  },
 
   // ==========================================
-  // 5. CCTV Explosion Proof (3 Model)
+  // 5. CCTV Explosion Proof (2 Model)
   // ==========================================
-  {
-    id: 'ds-2df4420wg-xey',
-    model: 'DS-2DF4420WG-XEY',
-    productName: '4 MP 20× Explosion-Proof Network Speed Dome (ATEX / IECEx)',
-    name: 'Hikvision DS-2DF4420WG-XEY 4 MP 20× Explosion-Proof Speed Dome',
-    category: 'explosion-proof',
-    categoryName: 'CCTV Explosion Proof',
-    brand: 'hikvision',
-    brandName: 'Hikvision Industrial',
-    res: '4 MP 20× ATEX / IECEx Zone 1/21',
-    price: 'Hubungi Penawaran',
-    image: 'assets/produk/DS-2DF4420WG-XEY(ADC)(E)/gambar1.webp',
-    images: [
-      'assets/produk/DS-2DF4420WG-XEY(ADC)(E)/gambar1.webp'
-    ],
-    specs: [
-      'Sertifikasi Ledakan Resmi ATEX & IECEx: Gas (Zone 1, Zone 2: Ex db IIC T6 Gb) & Debu (Zone 21, 22: Ex tb IIIC T80°C Db)',
-      'Housing Paduan Aluminium Khusus Tahan Ledakan (Explosion-Proof Die-Cast Aluminum) Menahan Percikan Api Internal',
-      'Resolusi 4 MP (2560 × 1440 @ 30 fps) & 20× Optical Zoom (4.7 mm - 94 mm) Pantau Detail dari Jarak Aman',
-      'Tingkat Proteksi Maksimal IP68 (Kedap Debu Total & Tahan Perendaman Air Bertekanan) Suhu Kerja -40 °C s/d 60 °C',
-      'Rotasi Pan 360° Endless, 120 dB True WDR, Kompresi H.265+, dan Deteksi Cerdas untuk Gudang Handak & Refinery'
-    ],
-    desc: 'Kamera PTZ Speed Dome bersertifikasi Explosion-Proof resmi ATEX dan IECEx untuk area berbahaya berisiko ledakan tinggi (Hazardous Zone 1 & 21). Dibungkus housing aluminium padat khusus yang dirancang untuk mencegah terjadinya rambatan percikan api internal ke atmosfer udara luar yang mengandung gas metana, uap bahan bakar, atau debu batubara pekat. Sangat direkomendasikan untuk gudang penyimpanan bahan peledak (handak), stasiun pengisian bahan bakar tambang (fuel farm), dan area kiln smelter.',
-    detailedSpecs: {
-      'Sertifikasi Anti-Ledakan': {
-        'Sertifikasi ATEX Gas': 'II 2 G Ex db IIC T6 Gb (Hazardous Area Zone 1 & Zone 2)',
-        'Sertifikasi ATEX Debu': 'II 2 D Ex tb IIIC T80°C Db IP68 (Hazardous Area Zone 21 & Zone 22)',
-        'Sertifikasi IECEx': 'Ex db IIC T6 Gb / Ex tb IIIC T80°C Db IP68',
-        'Standar Pengujian': 'EN 60079-0, EN 60079-1, EN 60079-31, IEC 60079'
-      },
-      'Material & Bodi': {
-        'Material Casing': 'Die-Cast Aluminum Alloy Anti-Ledakan Khusus',
-        'Tingkat Proteksi': 'IP68 (Kedap debu total dan tahan perendaman air)'
-      },
-      'Kamera & Optik': {
-        'Sensor Gambar': '1/2.8″ Progressive Scan CMOS 4 MP (2560 × 1440 @ 30 fps)',
-        'Zoom Optik': '20× Optical Zoom (focal length 4.7 mm hingga 94 mm)',
-        'Zoom Digital': '16×',
-        'Sensitivitas': 'Color: 0.05 Lux @ (F1.6, AGC ON), B/W: 0.01 Lux',
-        'WDR': '120 dB True WDR'
-      },
-      'Mekanisme PTZ': {
-        'Rentang Pergerakan': 'Pan 360° rotasi tanpa batas (endless); Tilt: -5° hingga 90°',
-        'Kecepatan Putar': 'Pan speed 0.1°/s s/d 50°/s; Tilt speed 0.1°/s s/d 40°/s',
-        'Preset': '300 presets terkonfigurasi'
-      },
-      'Fisik & Kelistrikan': {
-        'Suhu Operasional': '-40 °C hingga 60 °C',
-        'Suplai Daya': '100-240 VAC / PoE+ (802.3at), konsumsi maks. 25 W',
-        'Penyimpanan': 'Slot kartu MicroSD/SDHC/SDXC hingga 256 GB'
-      }
-    }
-  },
   {
     id: 'ds-2dy9236i-cwx-t5-316l',
     model: 'DS-2DY9236I-CWX(T5/316L)',
@@ -1013,13 +852,13 @@ const cctvProducts = [
   {
     id: 'ids-2cd7a47g0-p-xzhs-y',
     model: 'iDS-2CD7A47G0/P-XZHS(Y)',
-    productName: 'DeepinView 4 MP ColorVu ANPR Bullet Network Camera',
-    name: 'Hikvision DeepinView iDS-2CD7A47G0/P-XZHS(Y) 4 MP ColorVu ANPR',
+    productName: 'DeepinView 4 MP DarkFighterS ANPR Motorized Varifocal Bullet Camera',
+    name: 'Hikvision DeepinView iDS-2CD7A47G0/P-XZHS(Y) 4 MP DarkFighterS ANPR',
     category: 'anpr-lpr',
     categoryName: 'CCTV ANPR / LPR',
     brand: 'hikvision',
     brandName: 'Hikvision Industrial',
-    res: '4 MP DarkFighterS ColorVu ANPR',
+    res: '4 MP DarkFighterS ANPR 2.8-12 mm',
     price: 'Hubungi Penawaran',
     image: 'assets/produk/iDS-2CD7A47G0P-XZHS(Y)/gambar1.webp',
     images: [
@@ -1027,44 +866,52 @@ const cctvProducts = [
       'assets/produk/iDS-2CD7A47G0P-XZHS(Y)/gambar2.webp'
     ],
     specs: [
-      'Teknologi Unggulan ColorVu ANPR: Menghasilkan Tangkapan Pelat Nomor & Warna Asli Kendaraan 24 Jam Penuh Tanpa Monokrom',
-      'Fitur Self-Cleaning Kaca Depan dengan Pelapis Hidrofobik Mencegah Penempelan Debu Batubara & Cipratan Air Hujan',
-      'Sensor Canggih 1/1.8″ DarkFighterS Resolusi 4 MP (2688 × 1520 @ 30 fps) dengan Bukaan Lensa Super F1.2',
-      'Algoritma Deep Learning ANPR Terbaru: Mendukung Pengenalan Multi-Lajur (Multi-Lane) Sekaligus Secara Akurat',
-      'Casing Logam Kokoh IP67, IK10, Pelapisan Anti-Korosi NEMA 4X, Built-in Heater, dan Slot Kartu Memori 512 GB'
+      'Pengenalan Pelat Nomor (ANPR) Akurasi ≥98% untuk Mobil dan Motor, Kecepatan Kendaraan hingga 120 km/jam',
+      'Sensor 1/1.8″ DarkFighterS 4 MP (2688 × 1520) dengan Lensa Motorized 2.8-12 mm F1.0-F1.2',
+      'Deteksi Atribut Kendaraan: Tipe, Warna, Merek, dan Arah Laju, serta Penghitungan Kendaraan',
+      'Penerangan Hybrid IR dan White Light hingga 50 Meter, 140 dB WDR, Heater dan Demist Terintegrasi',
+      'Blocklist/Allowlist hingga 10.000 Data, Bodi Aluminium IP67 dan IK10, Slot microSD hingga 1 TB'
     ],
-    desc: 'Kamera ANPR tercanggih dari keluarga Hikvision DeepinView yang memadukan teknologi DarkFighterS dan ColorVu. Mampu menyajikan visual pelat nomor dan detail fisik kendaraan dalam warna asli selama 24 jam penuh tanpa beralih ke mode hitam-putih monokrom di malam hari. Dilengkapi fitur Self-Cleaning pada kaca depan dengan pelapisan hidrofobik yang mencegah penumpukan debu batubara, cipratan lumpur, dan air hujan di pos jembatan timbang (weighbridge) pertambangan.',
+    desc: 'Kamera ANPR dari keluarga Hikvision DeepinView dengan sensor besar 1/1.8″ DarkFighterS 4 MP yang tetap jernih dalam kondisi minim cahaya. Mampu mengenali pelat nomor mobil maupun motor dengan akurasi ≥98% pada skenario checkpoint, sekaligus mendeteksi tipe, warna, merek, dan arah laju kendaraan. Lensa motorized 2.8-12 mm, penerangan hybrid IR dan white light hingga 50 meter, serta heater dan demist terintegrasi membuatnya cocok untuk pos keluar-masuk site, jembatan timbang (weighbridge), dan jalur hauling di area pertambangan.',
     detailedSpecs: {
-      'Teknologi Utama': {
-        'Konsep Produk': 'Hikvision DeepinView ColorVu ANPR with Self-Cleaning Glass',
-        'Teknologi Warna': 'Full-Color ANPR Capture 24/7 (DarkFighterS + ColorVu)'
+      'Sensor & Kamera': {
+        'Sensor Gambar': '1/1.8″ Progressive Scan CMOS (DarkFighterS)',
+        'Resolusi Maksimal': '2688 × 1520 (4 MP)',
+        'Sensitivitas': 'Color: 0,0003 Lux @ (F1.0, AGC ON), B/W: 0,0001 Lux, 0 Lux dengan penerangan',
+        'WDR': '140 dB'
       },
-      'Sensor & Resolusi': {
-        'Sensor Gambar': '1/1.8″ Progressive Scan CMOS DarkFighterS',
-        'Resolusi Maksimal': '2688 × 1520 (4 Megapixel @ 30 fps)',
-        'Sensitivitas': 'Color: 0.0005 Lux @ (F1.2, AGC ON), 0 Lux dengan lampu penerangan aktif',
-        'WDR': '140 dB True WDR'
+      'Lensa & Penerangan': {
+        'Lensa': 'Motorized varifocal 2.8-12 mm, F1.0-F1.2, P-iris, autofokus',
+        'Sudut Pandang (FOV)': 'Horizontal 99,8° hingga 44,1°',
+        'Penerangan': 'Hybrid IR (850 nm) dan White Light hingga 50 m, Smart Supplement Light'
       },
-      'Lensa & Fitur Self-Cleaning': {
-        'Tipe Lensa': 'Motorized Varifocal 2.8 mm hingga 12 mm Autofokus',
-        'Kaca Depan Self-Cleaning': 'Lapisan kaca pelindung depan hidrofobik pembersih mandiri anti-debu dan air hujan'
+      'ANPR & Deteksi Kendaraan': {
+        'Pengenalan Pelat': 'Mobil dan motor (skenario checkpoint), akurasi ≥98%, capture rate ≥99%',
+        'Kecepatan Kendaraan': 'Hingga 120 km/jam (pemasangan depan), 80 km/jam (samping)',
+        'Atribut Kendaraan': 'Tipe, warna, merek, dan arah laju kendaraan, penghitungan kendaraan',
+        'Blocklist / Allowlist': 'Hingga 10.000 data',
+        'Manajemen Parkir': 'Deteksi status hingga 40 slot parkir (distant view) atau 4 slot dengan ANPR (close view)'
       },
-      'Kapabilitas ANPR Multi-Lajur': {
-        'Multi-Lane Capture': 'Mampu membaca pelat nomor pada multi-lajur sekaligus secara simultan',
-        'Tingkat Akurasi': '>98% pengenalan nomor registrasi pelat kendaraan',
-        'Database Internal': 'Blocklist & Allowlist hingga 10.000 nomor kendaraan'
+      'Fitur Cerdas Lainnya': {
+        'Perlindungan Perimeter': 'Line crossing, intrusi, masuk dan keluar area dengan filter manusia/kendaraan'
       },
-      'Iluminasi Hybrid': {
-        'Penerangan Tambahan': 'Kombinasi cerdas Warm White Light dan Smart IR'
+      'Video & Jaringan': {
+        'Kompresi Video': 'H.265+ / H.265 / H.264+ / H.264, 5 stream',
+        'Port Jaringan': '1 RJ45 10/100/1000 Mbps',
+        'Integrasi': 'ONVIF (Profile S, G, T, M), ISAPI, SDK, ISUP, Hik-Connect, HikCentral'
       },
-      'Antarmuka & Jaringan': {
-        'Kontrol Palang Gate': '2 Output relai alarm pemicu palang barrier otomatis',
-        'Port Komunikasi': '1 RJ45 10M/100M Ethernet, Wiegand, RS-485, slot microSD 512 GB'
+      'Antarmuka': {
+        'Alarm': '2 input, 2 output (maks. 24 VDC, 1 A)',
+        'Audio': '1 input, 1 output (3,5 mm)',
+        'RS-485': '1 port (Hikvision, Pelco-P, Pelco-D)',
+        'Penyimpanan Lokal': 'Slot microSD/SDHC/SDXC hingga 1 TB'
       },
-      'Proteksi & Lingkungan': {
-        'Standar Ketahanan': 'IP67 Weatherproof, IK10 Vandal-Proof, NEMA 4X Anti-Corrosion (-Y)',
-        'Pemanas': 'Built-in heater pemanas kaca depan',
-        'Suhu Operasional': '-40 °C s/d 60 °C, suplai daya 12 VDC / PoE+ (802.3at)'
+      'Fisik & Lingkungan': {
+        'Material': 'Bodi aluminium alloy, IP67 dan IK10',
+        'Heater & Demist': 'Ya, terintegrasi',
+        'Suhu Operasional': '-40 °C hingga 60 °C, kelembapan ≤ 95%',
+        'Suplai Daya': '12 VDC / 24 VAC / PoE (802.3at), maks. 24,7 W',
+        'Dimensi & Berat': 'Ø140 × 378,4 mm, sekitar 2,28 kg'
       }
     }
   }
