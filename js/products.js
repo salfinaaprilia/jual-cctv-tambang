@@ -458,59 +458,68 @@ const cctvProducts = [
     }
   },
   {
-    id: 'ds-2td2667t-15-p',
-    model: 'DS-2TD2667T-15/P',
-    productName: 'Thermographic Thermal & Optical Bi-Spectrum Network Bullet Camera',
-    name: 'Hikvision DS-2TD2667T-15/P Thermographic Thermal & Optical Bullet',
+    id: 'ds-2td2466t-25x',
+    model: 'DS-2TD2466T-25X',
+    productName: 'Explosion-Proof Thermographic Network Bullet Camera',
+    name: 'Hikvision DS-2TD2466T-25X Explosion-Proof Thermographic Bullet Camera',
     category: 'thermal',
     categoryName: 'CCTV Thermal',
     brand: 'hikvision',
     brandName: 'Hikvision Industrial',
-    res: 'Thermal 640 × 512 + Optical 4 MP',
+    res: 'Thermal 640 × 512, Lensa 25 mm',
     price: 'Hubungi Penawaran',
-    image: 'assets/produk/DS-2TD2667T-15P/gambar1.webp',
+    image: 'assets/produk/DS-2TD2466T-25X/gambar1.webp',
     images: [
-      'assets/produk/DS-2TD2667T-15P/gambar1.webp'
+      'assets/produk/DS-2TD2466T-25X/gambar1.webp'
     ],
     specs: [
-      'Dual-Spectrum Bi-Channel: Sensor Termal Resolusi Tinggi 640 × 512 + Sensor Kamera Optik 4 MP (2688 × 1520)',
-      'Pengukuran Suhu Termografi Presisi Tinggi Rentang -20 °C hingga 550 °C dengan Akurasi ±2 °C atau ±2%',
-      'Pencegahan Kebakaran Dini (Early Fire Prevention): Mendeteksi Self-Heating Spontan pada Stockpile Batubara',
-      'Teknologi Bi-Spectrum Image Fusion Menggabungkan Detail Kontur Gambar Optik di Atas Citra Termal',
-      'Lampu Flash Strobe Putih & Sirene Audio Terintegrasi Memberikan Peringatan Evakuasi Instan di Lokasi Site'
+      'Housing Anti-Ledakan Stainless Steel 316L: Tahan Korosi untuk Area Berbahaya dan Lingkungan Kimia',
+      'Sensor Termal Sensitivitas Tinggi 640 × 512 (VOx) dengan NETD < 40 mK dan Lensa 25 mm',
+      'Pengukuran Suhu -20 °C hingga 550 °C (Akurasi ±2 °C / ±2%) dengan 21 Aturan Pengukuran',
+      'Deteksi Titik Api Dinamis hingga 10 Titik Api dan Alarm Anomali Suhu yang Andal',
+      'Perlindungan Perimeter Cerdas: Line Crossing, Intrusi, serta Masuk dan Keluar Area'
     ],
-    desc: 'Kamera bi-spektrum termografi profesional kelas industri pertambangan yang menggabungkan sensor termal 640 × 512 dan kamera optik 4 MP dalam satu perangkat. Mampu mengukur suhu titik api dengan rentang lebar -20 °C hingga 550 °C dan akurasi presisi ±2 °C. Didesain khusus untuk pemantauan tumpukan batubara di stockpile, ban berjalan (conveyor belt), transfer chute, dan tangki penimbunan bahan bakar. Memungkinkan identifikasi visual yang jelas berkat fusi citra optik-termal serta memberikan alarm pencegahan sebelum timbul kebakaran hebat.',
+    desc: 'Kamera termografi bullet anti-ledakan (explosion-proof) Hikvision dengan housing stainless steel 316L yang melindungi kamera di lingkungan korosif dan memperpanjang usia pakai jauh di atas kamera standar. Dilengkapi sensor termal Vanadium Oxide beresolusi 640 × 512 dengan sensitivitas NETD kurang dari 40 mK dan lensa 25 mm, kamera ini mampu mengukur suhu dari -20 °C hingga 550 °C dengan akurasi ±2 °C serta mendeteksi hingga 10 titik api secara dinamis. Cocok untuk area berisiko tinggi di pertambangan seperti fuel station, gudang bahan peledak, stockpile batubara, conveyor, dan fasilitas pengolahan yang membutuhkan peringatan dini kebakaran.',
     detailedSpecs: {
-      'Spesifikasi Saluran Termal': {
-        'Sensor Termal': 'Vanadium Oxide (VOx) Uncooled Focal Plane Arrays',
-        'Resolusi Termal': '640 × 512 piksel (17 μm, 8~14 μm)',
-        'Sensitivitas (NETD)': '< 35 mK (@25 °C, F# = 1.0)',
-        'Lensa Termal': '15 mm (Sudut pandang Horisontal 42.1°, Vertikal 33.7°)'
+      'Modul Termal': {
+        'Sensor Gambar': 'Vanadium Oxide (VOx) Uncooled Focal Plane Arrays',
+        'Resolusi Maksimal': '640 × 512',
+        'Pixel Interval': '17 μm',
+        'Sensitivitas (NETD)': 'Kurang dari 40 mK (0,04 °C), F# = 1.0',
+        'Lensa (Focal Length)': '25 mm, aperture F1.0',
+        'Sudut Pandang (FOV)': '24,55° × 19,75° (H × V)',
+        'Jarak Fokus Minimum': '2 m',
+        'Response Waveband': '8 μm hingga 14 μm'
       },
-      'Spesifikasi Saluran Optik': {
-        'Sensor Gambar Optik': '1/2.7″ Progressive Scan CMOS',
-        'Resolusi Optik': '4 MP (2688 × 1520 @ 30 fps)',
-        'Lensa Optik': '6 mm Fixed Lens (Sudut pandang Horisontal 51.7°)',
-        'WDR & Penerangan': '120 dB True WDR, Smart IR jangkauan hingga 50 meter'
+      'Pengukuran Suhu & Deteksi Api': {
+        'Rentang Suhu': '-20 °C hingga 550 °C (-4 °F hingga 1.022 °F)',
+        'Akurasi Suhu': 'Maks. (±2 °C, ±2%)',
+        'Aturan Pengukuran': '3 tipe aturan, 21 aturan (10 titik, 10 area, 1 garis)',
+        'Deteksi Kebakaran': 'Deteksi titik api dinamis, hingga 10 titik api'
       },
-      'Pengukuran Suhu Termografi': {
-        'Rentang Pengukuran': '-20 °C hingga 550 °C (-4 °F hingga 1022 °F)',
-        'Akurasi Termal': '±2 °C atau ±2% (mana yang bernilai lebih besar)',
-        'Aturan Suhu': 'Mendukung 21 aturan pengukuran simultan (10 titik, 10 area, 1 garis)',
-        'Aplikasi Spesifik': 'Deteksi Spontaneous Combustion batubara, overheat bearing conveyor, trafo listrik'
+      'Fitur Cerdas (VCA)': {
+        'Analitik Video': '4 tipe aturan VCA (Line Crossing, Intrusion, Region Entrance, Region Exiting), hingga 8 aturan',
+        'Pemrosesan Citra': 'Adaptive AGC, DDE, 3D DNR, hingga 15 palet warna'
       },
-      'Fitur Gambar & Fusi Citra': {
-        'Image Fusion': 'Teknologi fusi bi-spektrum menampilkan detail tepi visual optik di atas gambar termal',
-        'Picture in Picture (PIP)': 'Menampilkan gambar termal di dalam pratinjau optik penuh'
+      'Video & Jaringan': {
+        'Main Stream': '50 fps (640 × 512, 384 × 288, 352 × 288)',
+        'Kompresi Video': 'H.265 / H.264 / MJPEG, H.265+ / H.264+',
+        'Live View Bersamaan': 'Hingga 20 kanal',
+        'Port Jaringan': '1 RJ45 10M/100M self-adaptive Ethernet',
+        'Integrasi': 'ISAPI, Hikvision SDK, platform pihak ketiga, iVMS-4200'
       },
-      'Alarm & Pertahanan Aktif': {
-        'Strobe Light': 'Lampu flash putih berkedip aktif sebagai peringatan visual',
-        'Audio Alarm': 'Speaker internal suara sirene/peringatan suara yang dapat disesuaikan'
+      'Antarmuka': {
+        'Alarm Input / Output': '2 input (0-5 V DC) / 2 output relay',
+        'Audio': '1 input (3,5 mm Mic/Line in), 1 output linear',
+        'Penyimpanan Lokal': 'Slot Micro SD/SDHC/SDXC hingga 128 GB',
+        'Output Video Analog': '1.0 V [p-p] / 75 Ω, PAL/NTSC, BNC'
       },
       'Fisik & Lingkungan': {
-        'Standar Perlindungan': 'IP67 Weatherproof',
-        'Suhu Operasional': '-40 °C hingga 65 °C, kelembapan ≤ 95%',
-        'Suplai Daya': 'PoE+ (802.3at) / 24 VAC / 12 VDC, konsumsi maks. 18 W'
+        'Material Housing': 'Stainless steel 316L anti-ledakan (explosion-proof)',
+        'Standar Perlindungan': 'IP66, proteksi petir TVS 6000 V, proteksi surge dan tegangan transien',
+        'Suhu Operasional': '-40 °C hingga 60 °C, kelembapan 90% atau kurang',
+        'Suplai Daya': '100-240 VAC, PoE (802.3at), konsumsi maks. 15 W',
+        'Dimensi & Berat': '409,6 × 179,2 × 183,3 mm, sekitar 19,11 kg'
       }
     }
   },
