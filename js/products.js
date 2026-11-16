@@ -1162,7 +1162,7 @@ document.addEventListener('DOMContentLoaded', () => {
     productContainer.innerHTML = filtered.map(item => `
       <div class="product-card" data-id="${item.id}">
         <div class="product-image-box">
-          <img src="${item.image}" alt="${item.model ? item.model + ' - ' : ''}${item.productName || item.name}" loading="lazy" />
+          <img width="800" height="800" src="${item.image}" alt="${item.model ? item.model + ' - ' : ''}${item.productName || item.name}" loading="lazy" />
         </div>
         <div class="product-body">
           <h3 class="product-model">${item.model || item.name}</h3>

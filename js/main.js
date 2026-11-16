@@ -10,10 +10,15 @@ const CM_COMPANY = 'PT Cahaya Mustika Internesia';
 document.addEventListener('DOMContentLoaded', () => {
   // Sticky Navbar Scroll
   const nav = document.getElementById('nav');
+  // Dibaca di dalam requestAnimationFrame agar tidak memicu forced reflow
+  let navTicking = false;
   const onScroll = () => {
-    if (nav) {
+    if (navTicking || !nav) return;
+    navTicking = true;
+    requestAnimationFrame(() => {
       nav.classList.toggle('sc', window.scrollY > 10);
-    }
+      navTicking = false;
+    });
   };
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
@@ -566,9 +571,9 @@ function showToast(message, duration = 3500) {
    REVEAL ON SCROLL: elemen muncul halus dari bawah ke atas di setiap halaman
    ========================================================================== */
 (function initRevealOnScroll() {
+  // Catatan performa: elemen di layar pertama (hero, page header, kartu detail produk,
+  // judul artikel) sengaja TIDAK dianimasikan agar LCP tidak tertunda.
   const SELECTORS = [
-    '.hero-content > *',
-    '.page-header .wrap > *',
     '.head',
     '.product-card',
     '.article-card',
@@ -577,8 +582,6 @@ function showToast(message, duration = 3500) {
     '.choosing-step',
     '.faq-i',
     '.cta-in',
-    '.pd-breadcrumb',
-    '.pd-card',
     '.pd-more',
     '.recent-article-card',
     '.sidebar-search-card',
@@ -587,7 +590,6 @@ function showToast(message, duration = 3500) {
     '.contact-layout > *',
     '.products-filter-section',
     '.catalog-status-bar',
-    'article.sec > .wrap > *',
     '.foot-in > *'
   ].join(',');
 
@@ -601,8 +603,23 @@ function showToast(message, duration = 3500) {
 
   const io = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
       const el = entry.target;
+
+      // Laporan pertama: elemen yang sudah terlihat saat halaman dibuka dibiarkan tampil
+      // apa adanya (tanpa animasi) supaya LCP tidak tertunda. Sisanya disembunyikan
+      // selagi masih di luar layar, lalu dianimasikan saat di-scroll.
+      if (!el.dataset.revealInit) {
+        el.dataset.revealInit = '1';
+        if (entry.isIntersecting) {
+          io.unobserve(el);
+          el.style.transitionDelay = '';
+        } else {
+          el.classList.add('reveal');
+        }
+        return;
+      }
+
+      if (!entry.isIntersecting) return;
       io.unobserve(el);
       el.classList.add('is-visible');
       // Lepas class setelah animasi selesai agar efek hover bawaan kembali normal
@@ -614,7 +631,7 @@ function showToast(message, duration = 3500) {
       el.addEventListener('transitionend', onEnd);
       setTimeout(() => finish(el), 1600);
     });
-  }, { threshold: 0, rootMargin: '0px 0px -8% 0px' });
+  }, { threshold: 0, rootMargin: '0px' });
 
   const prepare = (root) => {
     const found = [];
@@ -630,7 +647,6 @@ function showToast(message, duration = 3500) {
       const index = Math.min(Math.max(siblings.indexOf(el), 0), 4);
       el.style.transitionDelay = `${index * 90}ms`;
 
-      el.classList.add('reveal');
       io.observe(el);
     });
   };
