@@ -5,6 +5,7 @@
 
 const CM_PHONE = '+62 811-330-1819';
 const CM_WA_NUMBER = '628113301819';
+const CM_WA_URL = 'https://wa.me/628113301819?text=CT-MYID%0A%0AHalo%20Cahaya%20Mustika%20Internesia%2C%20saya%20tertarik%20dengan%20produk%20CCTV%20untuk%20Tambang.';
 const CM_COMPANY = 'PT Cahaya Mustika Internesia';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -140,7 +141,8 @@ document.addEventListener('DOMContentLoaded', () => {
                   `• Catatan Khusus: ${notes}\n\n` +
                   `Mohon info jadwal diskusi teknis & estimasi penawarannya. Terima kasih.`;
 
-      const waUrl = `https://wa.me/${CM_WA_NUMBER}?text=${encodeURIComponent(msg)}`;
+      // Kode CT-MYID tetap disertakan di awal pesan agar sumber chat bisa dilacak
+      const waUrl = `https://wa.me/${CM_WA_NUMBER}?text=${encodeURIComponent('CT-MYID\n\n' + msg)}`;
       window.open(waUrl, '_blank', 'noopener');
       showToast(`Terima kasih Bapak/Ibu ${name}! Menghubungi konsultan CCTV Tambang kami...`, 4000);
       contactForm.reset();
@@ -219,7 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
       modalImg.alt = imgAlt;
 
       const waMsg = `Halo PT Cahaya Mustika Internesia,\nSaya melihat dokumentasi portofolio: "${titleText}" (${catText}).\nSaya ingin konsultasi penerapan sistem serupa untuk area operasional tambang/industri kami.`;
-      modalWA.href = `https://wa.me/${CM_WA_NUMBER}?text=${encodeURIComponent(waMsg)}`;
+      modalWA.href = CM_WA_URL;
 
       modal.classList.add('active');
       document.body.style.overflow = 'hidden';
