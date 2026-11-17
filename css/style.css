@@ -1212,7 +1212,12 @@ html.show-splash .splash-screen {
   transform: translateX(4px);
 }
 
-.choosing-step h3 {
+.choosing-step h3,
+.choosing-step .choosing-step-title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.015em;
   font-size: 1.15rem;
   line-height: 1.4;
   margin-bottom: 0.5rem;
@@ -3186,4 +3191,47 @@ img.thumb-product {
 
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+}
+
+/* ==========================================================================
+   HEADING OUTLINE (homepage): product names & footer titles are h2,
+   so keep their original card/footer sizes instead of section h2 sizes
+   ========================================================================== */
+.sec h2.product-model,
+.head h2.product-model {
+  font-size: 1.16rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.35rem;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+}
+
+.foot h2.ftitle {
+  font-size: 1.15rem;
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+}
+
+p.port-overlay-title {
+  letter-spacing: -0.015em;
+}
+
+/* Portfolio page: card titles are h2, keep their original card sizes */
+.sec h2.port-overlay-title {
+  font-size: 1.15rem;
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+  margin: 0 0 0.55rem;
+}
+
+@media (max-width: 768px) {
+  .sec h2.port-overlay-title {
+    font-size: 1.05rem;
+  }
+}
+
+/* Articles page: sidebar widget titles are h2, keep their original size */
+.sec h2.sidebar-widget-title {
+  font-size: 1.15rem;
+  margin: 0 0 0.35rem;
 }

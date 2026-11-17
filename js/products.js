@@ -1005,7 +1005,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <circle cx="11" cy="11" r="8"></circle>
             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
           </svg>
-          <h3 style="font-family: var(--font-heading); margin-bottom: 0.5rem; color: #0B1320;">Tidak Ada Perangkat yang Sesuai</h3>
+          <p style="font-family: var(--font-heading); font-size: 1.17rem; font-weight: 700; margin-bottom: 0.5rem; color: #0B1320;">Tidak Ada Perangkat yang Sesuai</p>
           <p style="color: #64748B; margin-bottom: 1.5rem;">Coba ubah pilihan kategori atau kata kunci pencarian perangkat tambang Anda.</p>
           <button type="button" class="btn btn-navy btn-sm" onclick="document.getElementById('resetFilterBtn') && document.getElementById('resetFilterBtn').click()">
             Tampilkan Semua Perangkat
@@ -1021,7 +1021,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <img width="800" height="800" src="${item.image}" alt="${item.model ? item.model + ' - ' : ''}${item.productName || item.name}" loading="lazy" />
         </div>
         <div class="product-body">
-          <h3 class="product-model">${item.model || item.name}</h3>
+          <h2 class="product-model">${item.model || item.name}</h2>
           <div class="product-name">${item.productName || item.name}</div>
           <div class="product-specs-list">
             ${item.specs.slice(0, 2).map(s => `
