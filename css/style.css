@@ -3235,3 +3235,13 @@ p.port-overlay-title {
   font-size: 1.15rem;
   margin: 0 0 0.35rem;
 }
+
+/* FAQ: question buttons are wrapped in h3 for the heading outline,
+   the h3 itself adds no styling */
+.faq-h {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+}
